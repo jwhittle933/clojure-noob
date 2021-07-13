@@ -33,13 +33,11 @@
 
 (defn template
   [contents]
-  (str "<style>polyline { fill:none; stroke:#5881d8; stroke-width:3}</style>"
+  (str "<style>polyline { fill:none; stroke:#5881d8; stroke-width:3 }</style>"
        contents))
 
-
 (defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
+  []
   (let [filename "map.html"]
     (->> heists
          (xml 50 100)
